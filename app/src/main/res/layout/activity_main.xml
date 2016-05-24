@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="@dimen/activity_vertical_margin"
+    android:orientation="vertical"
+    tools:context="com.example.romka.realmvssqlite.MainActivity">
+
+    <TextView
+        android:id="@+id/realmResult"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:textSize="16sp"
+        android:layout_margin="16dp"
+        android:text="Realm result: summary, delete, insert, query, toModel"/>
+
+    <TextView
+        android:id="@+id/sqliteResult"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:textSize="16sp"
+        android:layout_margin="16dp"
+        android:text="SqLite result: summary, delete, insert, query, toModel"/>
+
+    <EditText
+        android:id="@+id/etItemCount"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:textSize="16sp"
+        android:text="1000"
+        android:layout_margin="16dp"
+        android:inputType="numberDecimal"/>
+
+    <Button
+        android:id="@+id/btnTestRealm"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:text="Test Realm"/>
+    <Button
+        android:id="@+id/btnTestSqlite"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:text="Test Sqlite"/>
+</LinearLayout>
