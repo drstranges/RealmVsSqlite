@@ -1,6 +1,7 @@
 package com.example.romka.realmvssqlite.model;
 
 import io.realm.RealmObject;
+import io.realm.annotations.Index;
 import io.realm.annotations.PrimaryKey;
 
 /**
@@ -10,6 +11,7 @@ public class SingleTestModel extends RealmObject {
     @PrimaryKey
     public Integer id;
     public String label;
+    @Index
     public Long longValue;
 
     public SingleTestModel() {}
